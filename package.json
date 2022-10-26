@@ -1,0 +1,19 @@
+{
+  "name": "movie-finding-app",
+  "version": "1.0.0",
+  "description": "An app where users can find where they can watch a given film.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ben-random/movie-finding-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ben-random/movie-finding-app/issues"
+  },
+  "homepage": "https://github.com/Ben-random/movie-finding-app#readme"
+}
