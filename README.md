@@ -1,2 +1,2 @@
 # movie-finding-app
-An app where users can find where they can watch a given film.
+An app with which users can find a streaming service where they can watch a given film.
