@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ben-random/movie-finding-app/issues"
   },
-  "homepage": "https://github.com/Ben-random/movie-finding-app#readme"
+  "homepage": "https://github.com/Ben-random/movie-finding-app#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0"
+  }
 }
