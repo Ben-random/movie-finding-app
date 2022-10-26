@@ -1,9 +1,8 @@
-function main(){
-    const validate = () => {
-        let movieToQuery = document.forms["movie_query"]["movie_to_query"]
-        console.log(movieToQuery)
-    }
-    validate()
-}
+const validate = () => {
+    let movieToQuery = document.getElementById("id").value
+    console.log(movieToQuery)
 
-module.exports = main
+}
+validate()
+let button = document.getElementById("button")
+button.addEventListener("click", () => validate())
