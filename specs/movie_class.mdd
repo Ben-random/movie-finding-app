@@ -1,0 +1,7 @@
+classDiagram
+
+class Movie {
+    +string title
+    +number rating
+    +string genre
+}
