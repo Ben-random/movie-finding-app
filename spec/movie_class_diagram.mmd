@@ -1,0 +1,34 @@
+classDiagram
+
+Movie  <|-- MovieRecommendation
+
+class Movie {
+
+    +string title
+    +number rating
+    +number id
+    +dateFormat releaseYear
+    +arr genres
+}
+
+class MovieRecommendation {
+
+    +string title
+    +number rating
+    +number id
+    +dateFormat year
+
+}
+
+class MovieApi {
+
+    +string title
+    +number rating
+    +number id
+    +dateFormat year
+
+}
+
+class StreamingApi {
+    +string stream-service
+}
