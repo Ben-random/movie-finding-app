@@ -2,14 +2,16 @@
 const key = "12517e9852ae2916fbb7e9018fd85977"
 const key2 = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjUxN2U5ODUyYWUyOTE2ZmJiN2U5MDE4ZmQ4NTk3NyIsInN1YiI6IjYzNTkxODA3MTEwOGE4MDA3OWRlMGUwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VRoQUJVknPISqc2oluBVbh_ux4Cm9IeSlhqAvUhvFJY"
 const url = "https://api.themoviedb.org/3/"
+const imageURL = "https://image.tmdb.org/t/p/w1280"
 
 class Movie{
-    constructor(id, title, releaseDate, genreIds) {
+    constructor(id, title, releaseDate, genreIds, poster) {
         this.id = id
         this.title = title
         this.releaseDate = releaseDate
         this.rating = 0
         this.genreIds = genreIds
+        this.poster = poster
     }
 }
 
@@ -24,7 +26,8 @@ function formatQuery(query) {
 function getMovies(movieResults) {
     let movies = []
     for (let i = 0; i< movieResults.length; i++) {
-        let movie = new Movie(movieResults[i].id, movieResults[i].title, movieResults[i].release_date, movieResults[i].genre_ids)
+        console.log(movieResults)
+        let movie = new Movie(movieResults[i].id, movieResults[i].title, movieResults[i].release_date, movieResults[i].genre_ids, `${imageURL}${movieResults[i].poster_path}`)
         movies.push(movie)
     }
     return movies
