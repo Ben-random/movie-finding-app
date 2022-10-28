@@ -1,4 +1,4 @@
-const fetch = require("isomorphic-fetch")
+//const fetch = require("isomorphic-fetch")
 const key = "12517e9852ae2916fbb7e9018fd85977"
 const key2 = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjUxN2U5ODUyYWUyOTE2ZmJiN2U5MDE4ZmQ4NTk3NyIsInN1YiI6IjYzNTkxODA3MTEwOGE4MDA3OWRlMGUwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VRoQUJVknPISqc2oluBVbh_ux4Cm9IeSlhqAvUhvFJY"
 const url = "https://api.themoviedb.org/3/"
@@ -54,9 +54,9 @@ async function getMovieData(nameToQuery) {
     for (let i = 0; i < movies.length; i++) {
         movies[i].watchProviders =  await getWatchProviders(movies[i].id)
     }
-    console.log(movies)
+    return movies
 }
 
-getMovieData("The Avengers")
+//getMovieData("The Avengers")
 
 module.exports = {getMovieData}
